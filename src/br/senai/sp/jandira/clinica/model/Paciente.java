@@ -6,10 +6,24 @@ public class Paciente {
 
 	public String nome;
 	public String cpf;
-	public double altura;
+	private double altura;
 	public double peso;
 	public String telefone;
 	public LocalDate dataNascimento;
+	
+	public void setAltura(double altura) {
+		
+		if (altura > 0) {
+			//TRUE
+			this.altura = altura;
+		} else {
+			//FALSE
+			System.out.println("Aaltura deve ser maior que zero!");
+		
+		}
+		
+		
+	}
 	
 	public void mostrarDados() {
 		System.out.println("-----------------------");
